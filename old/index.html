@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/js-minify@1.0.0/js-minify.min.js"></script>
+  <title>Hello World</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<script>
+        function copyCode() {
+            const codeElement = document.getElementById("reviews-code");
+            const code = codeElement.textContent;
+            navigator.clipboard
+                .writeText(code)
+                .then(() => {
+                    alert("Code copied to clipboard!");
+                })
+                .catch((err) => {
+                    console.error("Failed to copy code: ", err);
+                    alert("Failed to copy code to clipboard.");
+                });
+        }
+        document.getElementById('copy-button').onclick = copyCode;
+    </script>
+
+<body>
+  <h1>Hello, world!</h1>  
+  <div id="reviews-code-container">
+    <pre>
+      <code id="reviews-code"></code>
+    </pre>
+    <button id="copy-button">Copy</button>
+  </div>
+  <button onclick="runQRCode()">Run QR Code</button>  
+  <script defer type="text/javascript" src="/reviews.js"></script>
+  <script defer type="text/javascript" src="/qr.js"></script>
+</body>
+</html>

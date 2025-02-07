@@ -1,0 +1,1 @@
+javascript:(()=>{var%20o%2Ca%3Ddocument.URL%3Ba.includes(%22amazon.com%22)%3F(o%3D%60https%3A%2F%2Ffakespot.com%2Fanalyze%3Fra%3Dtrue%26url%3D%24%7Ba%7D%60%2Cwindow.location.href%3Do)%3Aalert(%22not%20an%20amazon%20product%22)%3B})()
