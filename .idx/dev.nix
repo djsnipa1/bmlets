@@ -10,6 +10,8 @@
     pkgs.corepack_latest
     pkgs.neovim
     pkgs.lazygit
+    pkgs.gh
+    pkgs.lf
   ];
 
   # Sets environment variables in the workspace

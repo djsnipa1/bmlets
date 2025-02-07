@@ -1,19 +1,19 @@
 {
-	"name": "project",
+	"name": "Bookmarklets",
 	"private": true,
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
 		"bookmarklets": "bookmarklets-cli 'bookmarklets/src/*.js' --dist-dir 'src/lib/bookmarklets/*.js'",
-		"preview": "vite preview",
+		"preview": "vite preview --host",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"deploy": "bookmarklets & pnpm build && pnpx gh-pages -d build -t true"
+		"deploy": "bookmarklets & pnpm build && pnpx gh-pages --nojekyll -d build"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
@@ -40,9 +40,6 @@
 	},
 	"packageManager": "pnpm@10.2.0+sha1.5d36c5a1aae9a628a924ee9982f013ad202e1051",
 	"pnpm": {
-		"ignoredBuiltDependencies": [
-			"esbuild"
-		],
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
