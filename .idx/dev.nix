@@ -12,6 +12,7 @@
     pkgs.lazygit
     pkgs.gh
     pkgs.lf
+    pkgs.bun
   ];
 
   # Sets environment variables in the workspace

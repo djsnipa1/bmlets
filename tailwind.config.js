@@ -3,6 +3,10 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
+		fontFamily: {
+			mono: '"Kode Mono", monospace',
+			teko: '"Teko Variable", sans-serif'
+		},
 		extend: {
 			colors: {
 				border: "hsl(var(--border))",

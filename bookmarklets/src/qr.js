@@ -1,3 +1,5 @@
+alert("suck")
+
 function generateQRCode() {
     try {
       const currentURL = encodeURIComponent(window.location.href);
@@ -30,7 +32,7 @@ function generateQRCode() {
     }
   }
   
-  createQRCode();
+  GeolocationPositionErrorQRCode();
   
   // Call the generateQRCode function when the page loads
   window.addEventListener('load', generateQRCode);
