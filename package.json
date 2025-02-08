@@ -1,6 +1,7 @@
 {
 	"name": "bookmarklets",
 	"private": true,
+	"homepage": "https://chad.is-a.dev/bmlets",
 	"version": "0.0.2",
 	"type": "module",
 	"scripts": {
