@@ -15,11 +15,6 @@
 
 	let bookmarklets = [];
 
-	// const bookmarklets = [
-	//   { label: 'Reviews Bookmarklet', code: reviewsCode },
-	//   { label: 'QR Bookmarklet', code: qrCode }
-	// ];
-
 	async function generateHtml() {
 		bookmarklets = [
 			{ label: 'Reviews Bookmarklet', code: reviewsCode },
@@ -64,16 +59,9 @@
 	});
 </script>
 
-<svelte:head>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-		rel="stylesheet"
-	/>
-</svelte:head>
-
 <div class="container mx-auto px-4 py-8">
 	<header class="mb-8 flex items-center justify-between">
-		<h1 class="text-3xl font-bold">Code Block App</h1>
+		<h1 class="text-3xl font-bold font-teko">Bookmarklets</h1>
 		<button on:click={toggleTheme} class="rounded-md bg-secondary p-2 text-secondary-foreground">
 			{#if isDarkMode}
 				{@html lightIcon}
@@ -89,7 +77,7 @@
 				<div class="relative">
 					<pre
 						id="code-block"
-						class="overflow-x-auto rounded-lg bg-muted p-4 text-muted-foreground"><code
+						class="overflow-x-auto text-xs rounded-lg bg-muted p-4 text-muted-foreground"><code
 							>{@html bookmarklet.html}</code
 						></pre>
 					<button
@@ -156,7 +144,7 @@
 	}
 
 	:global(body) {
-		font-family: 'Inter', sans-serif;
 		@apply bg-background text-foreground;
 	}
+	
 </style>

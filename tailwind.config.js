@@ -4,7 +4,7 @@ export default {
 
 	theme: {
 		fontFamily: {
-			mono: '"Kode Mono", monospace',
+			mono: '"Kode Mono Variable", monospace',
 			teko: '"Teko Variable", sans-serif'
 		},
 		extend: {
